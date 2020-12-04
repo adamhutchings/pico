@@ -34,7 +34,8 @@
   ELSE,
   WHILE,
   LOOP,
-  USE
+  USE,
+  RANGE
  
  };
  
