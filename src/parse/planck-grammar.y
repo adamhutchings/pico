@@ -275,6 +275,5 @@ import_list
  
 /* A complete program */
 translation_unit
-  : import_list
-  | program_after_imports
+  : import_list program_after_imports
   ;
