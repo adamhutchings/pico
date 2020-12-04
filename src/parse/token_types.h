@@ -35,7 +35,8 @@
   WHILE,
   LOOP,
   USE,
-  RANGE
+  RANGE,
+  FROM
  
  };
  
