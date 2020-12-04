@@ -9,7 +9,7 @@ CC = clang -c -I.
 LINKER = clang
 
 bin/pico : $(OBJECTS)
-  @$(LINKER) $(OBJECTS) -o bin/pico
+	@$(LINKER) $(OBJECTS) -o bin/pico
   
 bin/main.o : src/main.c
-  $(CC) src/main.c -o bin/main.o
+	$(CC) src/main.c -o bin/main.o
