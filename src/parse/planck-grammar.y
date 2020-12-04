@@ -99,6 +99,7 @@ function_call_expression
 /* The jump keywords on their own are also valid statements. */
 jump_statement
   : JUMP_STATEMENT SEMICOLON
+  | JUMP_STATEMENT expr SEMICOLON /* Only valid if a return statement */
   ;
   
 assignment_expression
@@ -108,6 +109,7 @@ assignment_expression
 /* Any expression with a meaningful value */
 expression
   : value
+  | OPENPAREN expr CLOSEPAREN /* Parentheses */
   | assignment_expression
   | unary_expression
   | crement_expression
