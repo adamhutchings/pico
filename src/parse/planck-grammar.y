@@ -45,11 +45,19 @@
 value
   : IDENTIFIER
   | LITERAL
+  | dot_value
   ;
   
 /* Any value that can appear on the left of an assignment, or a crement expression. */
 lvalue
   : IDENTIFIER
+  | dot_value
+  ;
+  
+/* A member of a class */
+dot_value
+  : IDENTIFIER
+  | IDENTIFIER DOT dot_value
   ;
   
 /* With a leading "-" or "!" */
